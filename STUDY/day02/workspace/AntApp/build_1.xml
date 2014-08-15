@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="projectauto" default="compile">
+	<target name="init">
+		<mkdir dir="./classes"/>
+	</target>
+	<target name="compile" depends="init">
+		<javac srcdir="./src" destdir="./classes"/>
+		<echo>compilation is completed!</echo>
+	</target>
+</project>

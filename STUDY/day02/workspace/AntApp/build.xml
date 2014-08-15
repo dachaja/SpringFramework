@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="projectauto" default="run">
+	<target name="init">
+		<mkdir dir="./classes"/>
+	</target>
+	<target name="compile" depends="init">
+		<javac srcdir="./src" destdir="./classes"/>
+		<javac srcdir="./test" destdir="./classes"/>
+		<echo>compilation is completed!</echo>
+	</target>
+	<target name="run" depends="compile">
+		<java classname="com.multicampus.biz.board.impl.BoardDAOClient" classpath="./classes">
+			<classpath refid="classpath"/>
+		</java>
+	</target>
+	
+	<path id="classpath">
+		<fileset dir="C:/dev/lib">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+</project>
