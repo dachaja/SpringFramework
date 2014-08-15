@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+					    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	
+	<!-- Annotation 설정 추가 -->
+	<context:component-scan base-package="polymorphism2"/>
+	
+ 	<!-- Bean 클래스 등록 
+ 	<bean id="lg" class="polymorphism2.LgTV"/>
+ 	
+ 	<bean id="samsung" class="polymorphism2.SamsungTV">
+ 		<property name="speaker" ref="sony"/>
+ 	</bean>
+ 	
+ 	<bean id="sony" class="polymorphism2.SonySpeaker"/>
+ 	
+ 	<bean id="apple" class="polymorphism2.AppleSpeaker"/>
+ 	-->
+</beans>
+
+
+
+
+
+
+
+
+
+
+
