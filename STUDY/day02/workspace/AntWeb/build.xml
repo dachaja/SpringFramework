@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Ant Web Project" default="deploy" basedir=".">
+	<property file="${basedir}/build.properties" />
+	
+	<path id="compile.classpath">
+		<fileset dir="${catalina.home}/common/lib">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="${web.home}/WEB-INF/lib">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	
+	<target name="clean">
+		<delete dir="${dist.home}"/>
+		<delete dir="${build.home}/classes"/>
+	</target>
+	
+	<target name="prepare" depends="clean">
+		<mkdir dir="${build.home}/classes"/>
+	</target>
+	 
+	<target name="compile" depends="prepare">
+		<javac srcdir="${src.home}" destdir="${build.home}/classes">
+			<classpath refid="compile.classpath"/>
+		</javac>
+	</target>
+	
+	<target name="javadoc" depends="compile">
+		<javadoc sourcepath="${src.home}"
+				 destdir="${dist.home}/docs/api"
+				 packagenames="*"/>
+	</target>
+	
+	<target name="dist" depends="javadoc">
+		<copy todir="${dist.home}">
+			<fileset dir="${web.home}"/>
+		</copy>
+		<copy todir="${dist.home}/WEB-INF/classes">
+			<fileset dir="${build.home}/classes"/>
+		</copy>
+		<jar jarfile="${dist.home}/${app.name}.war"
+			basedir="${dist.home}"/>
+	</target>
+	
+	<!--<target name="deploy" depends="dist">
+		<copy todir="${catalina.home}/webapps">
+			<fileset file="${dist.home}/${app.name}.war"/>
+		</copy>
+	</target>
+	-->
+	
+	<target name="deploy" depends="dist">
+		<ftp server="223.100.100.130"
+			 port="21"
+			 remotedir="/webapps"
+			 userid="test"
+			 password="test"
+			 verbose="yes">
+			 <fileset dir="${dist.home}">
+			 	<include name="${app.name}.war"/>
+			 </fileset>
+		</ftp>
+	</target>
+</project>
