@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS ENTITY="StrutsProcess">
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empUpdateDeliveryCompany"
+  NAME="action0" PATH="/empUpdateDeliveryCompany" SHAPE="32,17,0,0"
+  TITLE="deliveryCompanyForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="success"
+   NAME="forward0" PATH="/empListDeliveryCompany.do" TARGET="action11"
+   TITLE="success" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empGetPurchase"
+  NAME="action1" PATH="/empGetPurchase" SHAPE="32,241,0,0"
+  TITLE="purchaseForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="success"
+   NAME="forward0" PATH="/purchase/getPurchase.jsp" TARGET="page0"
+   TITLE="success" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empListProductSearch"
+  NAME="action2" PATH="/empListProductSearch" SHAPE="32,353,0,0"
+  TITLE="productSearchForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="success"
+   NAME="forward0" PATH="/purchase/listProductSearch.jsp" TARGET="page1"
+   TITLE="success" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empGetDeliveryCompany"
+  NAME="action3" PATH="/empGetDeliveryCompany" SHAPE="32,465,0,0"
+  TITLE="deliveryCompanyForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="success"
+   NAME="forward0" PATH="/purchase/updateDeliveryCompany.jsp"
+   TARGET="page2" TITLE="success" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem"
+  ID="#empAddDeliveryCompanyView" NAME="action4"
+  PATH="/empAddDeliveryCompanyView" SHAPE="32,1137,0,0" TYPE="action"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empAddPurchaseView"
+  NAME="action5" PATH="/empAddPurchaseView" SHAPE="32,577,0,0"
+  TITLE="productSearchForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="success"
+   NAME="forward0" PATH="/purchase/addPurchase.jsp" TARGET="page3"
+   TITLE="success" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empUpdatePurchaseView"
+  NAME="action6" PATH="/empUpdatePurchaseView" SHAPE="32,689,0,0"
+  TITLE="purchaseForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="success"
+   NAME="forward0" PATH="/purchase/updatePurchase.jsp" TARGET="page4"
+   TITLE="success" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empAddDeliveryCompany"
+  NAME="action7" PATH="/empAddDeliveryCompany" SHAPE="32,129,0,0"
+  TITLE="deliveryCompanyForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="success"
+   NAME="forward0" PATH="/empListDeliveryCompany.do" TARGET="action11"
+   TITLE="success" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empGetProductSearch"
+  NAME="action8" PATH="/empGetProductSearch" SHAPE="32,801,0,0"
+  TITLE="productSearchForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="success"
+   NAME="forward0" PATH="/purchase/getProductSearch.jsp" TARGET="page5"
+   TITLE="success" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empAddPurchase"
+  NAME="action9" PATH="/empAddPurchase" SHAPE="32,913,0,0"
+  TITLE="purchaseForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="success"
+   NAME="forward0" PATH="/empListPurchase.do" TARGET="action10"
+   TITLE="success" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empListPurchase"
+  NAME="action10" PATH="/empListPurchase" SHAPE="256,929,0,0"
+  TITLE="purchaseForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="success"
+   NAME="forward0" PATH="/purchase/listPurchase.jsp" TARGET="page6"
+   TITLE="success" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empListDeliveryCompany"
+  NAME="action11" PATH="/empListDeliveryCompany" SHAPE="256,33,0,0"
+  TITLE="deliveryCompanyForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="success"
+   NAME="forward0" PATH="/purchase/listDeliveryCompany.jsp"
+   TARGET="page7" TITLE="success" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empUpdatePurchase"
+  NAME="action12" PATH="/empUpdatePurchase" SHAPE="32,1025,0,0"
+  TITLE="purchaseForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="success"
+   NAME="forward0" PATH="/empListPurchase.do" TARGET="action10"
+   TITLE="success" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page0"
+  PATH="/purchase/getPurchase.jsp" SHAPE="240,258,0,0" SUBTYPE="jsp"
+  TITLE="getPurchase.jsp" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page1"
+  PATH="/purchase/listProductSearch.jsp" SHAPE="240,370,0,0"
+  SUBTYPE="jsp" TITLE="listProductSearch.jsp" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page2"
+  PATH="/purchase/updateDeliveryCompany.jsp" SHAPE="240,482,0,0"
+  SUBTYPE="jsp" TITLE="updateDeliveryCompany.jsp" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page3"
+  PATH="/purchase/addPurchase.jsp" SHAPE="240,594,0,0" SUBTYPE="jsp"
+  TITLE="addPurchase.jsp" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page4"
+  PATH="/purchase/updatePurchase.jsp" SHAPE="240,706,0,0" SUBTYPE="jsp"
+  TITLE="updatePurchase.jsp" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page5"
+  PATH="/purchase/getProductSearch.jsp" SHAPE="240,818,0,0"
+  SUBTYPE="jsp" TITLE="getProductSearch.jsp" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page6"
+  PATH="/purchase/listPurchase.jsp" SHAPE="464,914,0,0" SUBTYPE="jsp"
+  TITLE="listPurchase.jsp" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page7"
+  PATH="/purchase/listDeliveryCompany.jsp" SHAPE="464,18,0,0"
+  SUBTYPE="jsp" TITLE="listDeliveryCompany.jsp" TYPE="page"/>
+</PROCESS>

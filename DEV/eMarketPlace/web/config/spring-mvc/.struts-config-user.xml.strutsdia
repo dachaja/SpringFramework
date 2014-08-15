@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS ENTITY="StrutsProcess">
+ <PROCESS-ITEM ENTITY="StrutsProcessItem"
+  ID="systemier.web.util.AuthenticationException" NAME="exception0"
+  PATH="/common/error.jsp" SHAPE="32,17,0,0" TARGET="page0"
+  TITLE="AuthenticationException" TYPE="exception"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empLogout" NAME="action0"
+  PATH="/empLogout" SHAPE="240,369,0,0" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="success"
+   NAME="forward0" PATH="/empLoginView.do" TARGET="action9"
+   TITLE="success" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empAddUser"
+  NAME="action1" PATH="/empAddUser" SHAPE="32,465,0,0" TITLE="userForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="success"
+   NAME="forward0" PATH="/empLogin.do" TARGET="action8" TITLE="success" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empAfterErrorPage"
+  NAME="action2" PATH="/empAfterErrorPage" SHAPE="32,1233,0,0" TYPE="action"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empGetAdminUser"
+  NAME="action3" PATH="/empGetAdminUser" SHAPE="256,657,0,0"
+  TITLE="userForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="success"
+   NAME="forward0" PATH="/user/updateUser.jsp" TARGET="page1"
+   TITLE="success" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empUpdateUser"
+  NAME="action4" PATH="/empUpdateUser" SHAPE="32,753,0,0"
+  TITLE="userForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput"
+   ID="success_list" NAME="forward0" PATH="/empListUser.do"
+   TARGET="action12" TITLE="success_list" TYPE="forward"/>
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput"
+   ID="success_update" NAME="forward1" PATH="/empGetUser.do"
+   TARGET="action13" TITLE="success_update" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empCheckDuplication"
+  NAME="action5" PATH="/empCheckDuplication" SHAPE="32,1009,0,0"
+  TITLE="userForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="success"
+   NAME="forward0" PATH="/user/checkDuplication.jsp" TARGET="page2"
+   TITLE="success" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empPopCheckDuplication"
+  NAME="action6" PATH="/empPopCheckDuplication" SHAPE="240,1249,0,0"
+  SUBTYPE="parameter" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" NAME="action6"
+   PATH="/user/checkDuplication.jsp" TARGET="page2" TITLE="parameter" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#welcome" NAME="action7"
+  PATH="/welcome" SHAPE="448,1233,0,0" TYPE="action"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empLogin" NAME="action8"
+  PATH="/empLogin" SHAPE="240,481,0,0" TITLE="userForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="success"
+   NAME="forward0" PATH="/home.do" TARGET="action10" TITLE="success" TYPE="forward"/>
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="failure"
+   NAME="forward1" PATH="/empLoginView.do" TARGET="action9"
+   TITLE="failure" TYPE="forward"/>
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput"
+   ID="systemier.web.util.AuthenticationException" NAME="exception0"
+   PATH="/empLoginView.do" TARGET="action9"
+   TITLE="AuthenticationException" TYPE="exception"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empLoginView"
+  NAME="action9" PATH="/empLoginView" SHAPE="480,353,0,0" TYPE="action"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#home" NAME="action10"
+  PATH="/home" SHAPE="480,465,0,0" TYPE="action"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empAddUserView"
+  NAME="action11" PATH="/empAddUserView" SHAPE="32,1121,0,0"
+  TITLE="userForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="success"
+   NAME="forward0" PATH="/user/addUser.jsp" TARGET="page3"
+   TITLE="success" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empListUser"
+  NAME="action12" PATH="/empListUser" SHAPE="256,913,0,0"
+  TITLE="userForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="success"
+   NAME="forward0" PATH="/user/listUser.jsp" TARGET="page4"
+   TITLE="success" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#empGetUser"
+  NAME="action13" PATH="/empGetUser" SHAPE="256,769,0,0"
+  TITLE="userForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="success"
+   NAME="forward0" PATH="/user/updateUser.jsp" TARGET="page1"
+   TITLE="success" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page0"
+  PATH="/common/error.jsp" SHAPE="272,34,0,0" SUBTYPE="jsp"
+  TITLE="error.jsp" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page1"
+  PATH="/user/updateUser.jsp" SHAPE="480,642,0,0" SUBTYPE="jsp"
+  TITLE="updateUser.jsp" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page2"
+  PATH="/user/checkDuplication.jsp" SHAPE="240,1026,0,0" SUBTYPE="jsp"
+  TITLE="checkDuplication.jsp" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page3"
+  PATH="/user/addUser.jsp" SHAPE="240,1138,0,0" SUBTYPE="jsp"
+  TITLE="addUser.jsp" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page4"
+  PATH="/user/listUser.jsp" SHAPE="480,898,0,0" SUBTYPE="jsp"
+  TITLE="listUser.jsp" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page5" PATH="/index.jsp"
+  SHAPE="688,465,0,0" SUBTYPE="jsp" TITLE="index.jsp" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page6"
+  PATH="/layouts/welcome.jsp" SHAPE="656,1233,0,0" SUBTYPE="jsp"
+  TITLE="welcome.jsp" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page7"
+  PATH="/system/login.jsp" SHAPE="688,353,0,0" SUBTYPE="jsp"
+  TITLE="login.jsp" TYPE="page"/>
+</PROCESS>
