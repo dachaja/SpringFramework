@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+					    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	
+	<!-- HandlerMapping 등록 -->
+	<bean id="handlerMapping" class="">
+		<property name="mappings">
+			<props>
+				<prop key="/login.do">login</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<!-- Controller 등록 -->
+	<bean id="login" class=""/>
+	
+	<!-- ViewResolver 등록 -->
+	<bean id="viewResolver" class="">
+		<property name="prefix" value="/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean>
+</beans>
+
+
+
+
+
+
+
+
+
+
+
