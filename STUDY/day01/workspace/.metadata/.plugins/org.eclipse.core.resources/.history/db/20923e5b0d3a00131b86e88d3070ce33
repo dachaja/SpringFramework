@@ -1,0 +1,7 @@
+package board;
+
+public class GetBoardListTest {
+	public static void main(String[] args) {
+		// JDBC 관련 변수 선언
+	}
+}

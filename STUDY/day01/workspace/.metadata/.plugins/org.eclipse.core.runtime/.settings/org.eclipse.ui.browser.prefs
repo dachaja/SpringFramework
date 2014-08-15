@@ -1,0 +1,5 @@
+#Mon Oct 21 11:11:00 KST 2013
+browsers=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<web-browsers current\="0">\r\n<system/>\r\n<external location\="C\:\\Program Files\\Internet Explorer\\iexplore.exe" name\="Internet Explorer"/>\r\n</web-browsers>
+browser-choice=0
+eclipse.preferences.version=1
+internalWebBrowserHistory=http\://localhost\:8080/HelloWeb/hello.jsp?id\=aaa|*|http\://localhost\:8080/HelloWeb/hello.jsp|*|http\://localhost\:8080/HelloWeb/|*|

@@ -1,0 +1,12 @@
+package debugging;
+
+public class DebuggingTest {
+	public static void main(String[] args) {
+		System.out.println("process start....");
+		
+		callMethodA(10);
+		callMethodB();
+		
+		System.out.println("process end....");
+	}
+}

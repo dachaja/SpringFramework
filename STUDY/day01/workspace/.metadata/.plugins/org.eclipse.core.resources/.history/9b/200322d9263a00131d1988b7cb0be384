@@ -1,0 +1,42 @@
+package com.multicampus.biz.junit;
+
+import junit.framework.TestCase;
+
+public class MyVectorTest extends TestCase {
+	private MyVector v;
+
+	protected void setUp() throws Exception {
+		super.setUp();
+		v = new MyVector();
+	}
+
+	protected void tearDown() throws Exception {
+		super.tearDown();
+		v = null;
+	}
+
+	public void testIsEmpty() {
+		assertTrue(v.isEmpty());
+		v.addElement("abc");
+		assertTrue(!v.isEmpty());
+	}
+
+	public void testContains() {
+		fail("Not yet implemented");
+	}
+
+	public void testIndexOf() {
+		fail("Not yet implemented");
+	}
+
+	public void testElementAt() {
+		fail("Not yet implemented");
+	}
+
+	public void testAddElement() {
+		v.addElement("abc");
+		v.addElement(new Integer(1));
+		assertEquals(2, v.size());
+	}
+
+}
