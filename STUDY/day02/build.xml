@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="junitLab" default="junitTest">
+	<target name="init">
+		<mkdir dir="build/classes"/>
+		<mkdir dir="build/test"/>
+		<mkdir dir="build/report"/>
+	</target>
+	
+	<target name="compile" depends="init">
+		<javac srcdir="src" destdir="build/classes"/>
+		<javac srcdir="test" destdir="build/test">
+			<classpath refid="test.classpath"/>
+		</javac>
+	</target>
+	
+	<target name="junitTest" depends="compile">
+		<junit printsummary="true" haltonfailure="true">
+			<classpath refid="test.classpath"/>
+			<formatter type="xml"/>
+			<test name="com.multicampus.biz.junit4.AllTests"/>
+		</junit>
+	</target>
+	
+	<path id="test.classpath">
+		<pathelement location="build/classes"/>
+		<pathelement location="build/test"/>
+		<fileset dir="C:/dev/lib">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	
+	<junitreport >
+		<fileset dir=".">
+			<include name="TEST-*.xml"/>
+		</fileset>
+		<report format="frames" todir="build/report"/>
+	</junitreport>
+
+</project>
