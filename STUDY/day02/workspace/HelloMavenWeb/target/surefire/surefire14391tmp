@@ -1,0 +1,5 @@
+#surefire
+#Tue Oct 22 17:05:19 KST 2013
+user.dir=C\:\\DEV\\workspace\\HelloMavenWeb
+localRepository=C\:\\Users\\GKN\\.m2\\repository
+basedir=C\:\\DEV\\workspace\\HelloMavenWeb

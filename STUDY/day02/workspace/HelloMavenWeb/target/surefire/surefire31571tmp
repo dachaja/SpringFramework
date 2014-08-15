@@ -1,0 +1,26 @@
+#surefire
+#Tue Oct 22 17:07:31 KST 2013
+testClassesDirectory=C\:\\DEV\\workspace\\HelloMavenWeb\\target\\test-classes
+classPathUrl.4=C\:\\Users\\GKN\\.m2\\repository\\org\\springframework\\spring-core\\3.2.4.RELEASE\\spring-core-3.2.4.RELEASE.jar
+forkMode=once
+classPathUrl.3=C\:\\Users\\GKN\\.m2\\repository\\org\\springframework\\spring-beans\\3.2.4.RELEASE\\spring-beans-3.2.4.RELEASE.jar
+classPathUrl.2=C\:\\Users\\GKN\\.m2\\repository\\junit\\junit\\3.8.1\\junit-3.8.1.jar
+useManifestOnlyJar=true
+classPathUrl.1=C\:\\DEV\\workspace\\HelloMavenWeb\\target\\classes
+reportsDirectory=C\:\\DEV\\workspace\\HelloMavenWeb\\target\\surefire-reports
+classPathUrl.0=C\:\\DEV\\workspace\\HelloMavenWeb\\target\\test-classes
+providerConfiguration=org.apache.maven.surefire.junit.JUnit3Provider
+testSuiteDefinitionTestSourceDirectory=C\:\\DEV\\workspace\\HelloMavenWeb\\src\\test\\java
+surefireClassPathUrl.1=C\:\\Users\\GKN\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-api\\2.10\\surefire-api-2.10.jar
+surefireClassPathUrl.0=C\:\\Users\\GKN\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-junit3\\2.10\\surefire-junit3-2.10.jar
+runOrder=filesystem
+useSystemClassLoader=true
+excludes0=**/*$*
+isTrimStackTrace=true
+enableAssertions=true
+includes2=**/*TestCase.java
+failIfNoTests=false
+includes1=**/*Test.java
+includes0=**/Test*.java
+childDelegation=false
+classPathUrl.5=C\:\\Users\\GKN\\.m2\\repository\\commons-logging\\commons-logging\\1.1.1\\commons-logging-1.1.1.jar

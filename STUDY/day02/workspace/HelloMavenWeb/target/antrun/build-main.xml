@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <ftp password="test" userid="test" server="223.100.100.130" port="21" remotedir="/webapps">
+    <fileset dir="./target">
+      <include name="*.war"/>
+    </fileset>
+  </ftp>
+</target>
+</project>
