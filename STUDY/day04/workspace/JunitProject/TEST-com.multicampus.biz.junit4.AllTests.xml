@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="GKN-PC11" name="com.multicampus.biz.junit4.AllTests" tests="4" time="1.379" timestamp="2013-10-22T06:01:22">
+  <properties>
+    <property name="ant.project.invoked-targets" value="junitTest" />
+    <property name="java.runtime.name" value="Java(TM) 2 Runtime Environment, Standard Edition" />
+    <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jre1.5.0_12\bin" />
+    <property name="java.vm.version" value="1.5.0_12-b04" />
+    <property name="ant.library.dir" value="C:\DEV\apache-ant-1.8.2\lib" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
+    <property name="ant.java.version" value="1.5" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="user.country" value="KR" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="user.dir" value="C:\DEV\workspace\JunitProject" />
+    <property name="java.runtime.version" value="1.5.0_12-b04" />
+    <property name="ant.file.junitLab" value="C:\DEV\workspace\JunitProject\build.xml" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="eclipse.pdebuild.scripts" value="/C:/DEV/eclipse/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/scripts/" />
+    <property name="basedir" value="C:\DEV\workspace\JunitProject" />
+    <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jre1.5.0_12\lib\endorsed" />
+    <property name="os.arch" value="x86" />
+    <property name="ant.project.default-target" value="junitTest" />
+    <property name="java.io.tmpdir" value="C:\Users\GKN\AppData\Local\Temp\" />
+    <property name="ant.core.lib" value="C:\DEV\apache-ant-1.8.2\lib\ant.jar" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="user.variant" value="" />
+    <property name="os.name" value="Windows Vista" />
+    <property name="ant.home" value="C:\DEV\apache-ant-1.8.2" />
+    <property name="eclipse.pdebuild.templates" value="/C:/DEV/eclipse/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/templates/" />
+    <property name="ant.project.name" value="junitLab" />
+    <property name="sun.jnu.encoding" value="MS949" />
+    <property name="eclipse.pdebuild.home" value="/C:/DEV/eclipse/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/./" />
+    <property name="java.library.path" value="C:\DEV\eclipse;.;C:\Windows\system32;C:\Windows;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\PROGRA~2\ULTRAE~1;C:\Program Files (x86)\Java\jdk1.5.0_12\bin;C:\DEV\eclipse\configuration\org.eclipse.osgi\bundles\596\1\.cp" />
+    <property name="java.class.version" value="49.0" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="org.apache.tools.ant.taskdefs.optional.junit.AggregateTransformer0" value="C:\Users\GKN\AppData\Local\Temp\null1648350010" />
+    <property name="os.version" value="6.1" />
+    <property name="ant.file" value="C:\DEV\workspace\JunitProject\build.xml" />
+    <property name="user.home" value="C:\Users\GKN" />
+    <property name="user.timezone" value="" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="java.specification.version" value="1.5" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="java.class.path" value="C:\DEV\apache-ant-1.8.2\lib\ant-antlr.jar;C:\DEV\apache-ant-1.8.2\lib\ant-apache-bcel.jar;C:\DEV\apache-ant-1.8.2\lib\ant-apache-bsf.jar;C:\DEV\apache-ant-1.8.2\lib\ant-apache-log4j.jar;C:\DEV\apache-ant-1.8.2\lib\ant-apache-oro.jar;C:\DEV\apache-ant-1.8.2\lib\ant-apache-regexp.jar;C:\DEV\apache-ant-1.8.2\lib\ant-apache-resolver.jar;C:\DEV\apache-ant-1.8.2\lib\ant-apache-xalan2.jar;C:\DEV\apache-ant-1.8.2\lib\ant-commons-logging.jar;C:\DEV\apache-ant-1.8.2\lib\ant-commons-net.jar;C:\DEV\apache-ant-1.8.2\lib\ant-jai.jar;C:\DEV\apache-ant-1.8.2\lib\ant-javamail.jar;C:\DEV\apache-ant-1.8.2\lib\ant-jdepend.jar;C:\DEV\apache-ant-1.8.2\lib\ant-jmf.jar;C:\DEV\apache-ant-1.8.2\lib\ant-jsch.jar;C:\DEV\apache-ant-1.8.2\lib\ant-junit.jar;C:\DEV\apache-ant-1.8.2\lib\ant-junit4.jar;C:\DEV\apache-ant-1.8.2\lib\ant-launcher.jar;C:\DEV\apache-ant-1.8.2\lib\ant-netrexx.jar;C:\DEV\apache-ant-1.8.2\lib\ant-swing.jar;C:\DEV\apache-ant-1.8.2\lib\ant-testutil.jar;C:\DEV\apache-ant-1.8.2\lib\ant.jar;C:\DEV\lib\commons-net-1.4.1.jar;C:\DEV\lib\jakarta-oro-2.0.8.jar;C:\DEV\eclipse\configuration\org.eclipse.osgi\bundles\56\1\.cp\lib\antdebug.jar;C:\DEV\eclipse\configuration\org.eclipse.osgi\bundles\56\1\.cp\lib\remote.jar;C:\DEV\eclipse\configuration\org.eclipse.osgi\bundles\57\1\.cp\lib\remoteAnt.jar;C:\Program Files (x86)\Java\jdk1.5.0_12\lib\tools.jar;C:\DEV\eclipse\plugins\org.eclipse.swt.win32.win32.x86_3.7.1.v3738a.jar" />
+    <property name="user.name" value="GKN" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="java.home" value="C:\Program Files (x86)\Java\jre1.5.0_12" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="user.language" value="ko" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="ant.file.type.junitLab" value="file" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="java.version" value="1.5.0_12" />
+    <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jre1.5.0_12\lib\ext" />
+    <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jre1.5.0_12\lib\rt.jar;C:\Program Files (x86)\Java\jre1.5.0_12\lib\i18n.jar;C:\Program Files (x86)\Java\jre1.5.0_12\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.5.0_12\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.5.0_12\lib\jce.jar;C:\Program Files (x86)\Java\jre1.5.0_12\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.5.0_12\classes" />
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="file.separator" value="\" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.desktop" value="windows" />
+    <property name="sun.cpu.isalist" value="" />
+  </properties>
+  <testcase classname="com.multicampus.biz.junit4.MyStackTest" name="testPush" time="0.017" />
+  <testcase classname="com.multicampus.biz.junit4.MyStackTest" name="testIsEmpty" time="0.0030" />
+  <testcase classname="com.multicampus.biz.junit4.MyStackTest" name="testPop" time="0.0020" />
+  <testcase classname="com.multicampus.biz.junit4.BoardDAOTest" name="testGetBoard" time="1.257" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
